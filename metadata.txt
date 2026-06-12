@@ -1,0 +1,15 @@
+[general]
+name=ColoredGPX
+description=GPX轨迹按速度/高度渲染工具
+version=1.1
+qgisMinimumVersion=3.1
+qgisMaximumVersion=4.99
+author=OpenQGIS
+email=OpenQGIS@outlook.com
+about=提取GPX的track points图层的速度（speed）和高程（elevation）信息，生成一个ColoredGPX图层并自动速度/高程渲染。
+tracker=https://github.com/OpenQGIS/ColoredGPX/issues
+repository=https://github.com/OpenQGIS/ColoredGPX
+tags=GPX,Analysis
+homepage=https://github.com/OpenQGIS/ColoredGPX
+category=Analysis
+icon=icons/icon.png                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
