@@ -83,7 +83,8 @@ class ColoredGPXDialog(QDialog):
                 self.ramp_display.setText(ramp_names[0])
                 ramp = QgsStyle().defaultStyle().colorRamp(ramp_names[0])
                 if ramp:
-                    self._update_ramp_preview()
+                    icon = self._make_ramp_preview(ramp)
+                    self.ramp_preview.setPixmap(icon.pixmap(74, 22))
         except:
             pass
 
@@ -251,6 +252,8 @@ class ColoredGPXDialog(QDialog):
 
         layout.addWidget(list_widget)
 
+        list_widget.itemDoubleClicked.connect(dialog.accept)
+
         btn_layout = QHBoxLayout()
         ok_btn = QPushButton(tr("确定", "OK"))
         ok_btn.clicked.connect(dialog.accept)
@@ -365,7 +368,7 @@ class ColoredGPX:
         gpx_file = source.split("|")[0]
 
         if not os.path.exists(gpx_file):
-            self.iface.messageBar().pushCritical("ColoredGPX", tr("无法找到 GPX 文件", "Cannot find GPX file"))
+            self.iface.messageBar().pushCritical("ColoredGPX", tr("请选择GPX数据的 track_points 图层！", "Please select a track_points layer from GPX data!"))
             return
 
         # ---- process ---- #
