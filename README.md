@@ -43,7 +43,7 @@
 
 ## 项目结构
 
-`
+```text
 ColoredGPX/
 ├── __init__.py          # 插件入口
 ├── coloredgpx.py        # 主对话框和插件逻辑
@@ -56,7 +56,7 @@ ColoredGPX/
 │   ├── icon.png         # 插件管理器图标
 │   └── icon.svg         # 工具栏图标
 └── README.md
-`
+```
 
 ## 兼容性
 
@@ -121,7 +121,7 @@ GPL-2.0-or-later
 
 ## Project Structure
 
-`
+```text
 ColoredGPX/
 ├── __init__.py          # Plugin entry point
 ├── coloredgpx.py        # Main dialog and plugin logic
@@ -134,7 +134,7 @@ ColoredGPX/
 │   ├── icon.png         # Plugin manager icon
 │   └── icon.svg         # Toolbar icon
 └── README.md
-`
+```
 
 ## Compatibility
 
